@@ -96,7 +96,11 @@ async function bootstrap() {
   });
 
   // Start the app listening on the API port or default to port 3000
-  await app.listen(process.env.API_PORT || 3000);
+  if (process.env.NODE_ENV === 'production') {
+    await app.listen(process.env.API_PORT || 3000, '0.0.0.0');
+  } else {
+    await app.listen(process.env.API_PORT || 3000);
+  }
 
   // Log the app version and port to the console
   logger.info(
