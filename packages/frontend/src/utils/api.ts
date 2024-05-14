@@ -10,10 +10,12 @@ import { handleErrors } from './axios';
  *
  * One example: https://jakobzanker.de/blog/inject-environment-variables-into-a-react-app-docker-on-runtime/
  */
-export const apiBaseURL =
-  process.env.NODE_ENV === 'production'
-    ? '/api'
-    : `${process.env.REACT_APP_SERVER_URL as string}/api`;
+
+export const apiBaseURL = `${process.env.REACT_APP_SERVER_URL as string}/api`;
+//   本当はこうなるが、productionでも環境変数をつかうようにする。
+//   process.env.NODE_ENV === 'production'
+//     ? '/api'
+//     : `${process.env.REACT_APP_SERVER_URL as string}/api`;
 
 /**
  * Api client for unathenticated requests
