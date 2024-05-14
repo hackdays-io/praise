@@ -4239,7 +4239,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mapbox/node-pre-gyp@npm:^1.0.0, @mapbox/node-pre-gyp@npm:^1.0.10":
+"@mapbox/node-pre-gyp@npm:^1.0.0":
+  version: 1.0.11
+  resolution: "@mapbox/node-pre-gyp@npm:1.0.11"
+  dependencies:
+    detect-libc: ^2.0.0
+    https-proxy-agent: ^5.0.0
+    make-dir: ^3.1.0
+    node-fetch: ^2.6.7
+    nopt: ^5.0.0
+    npmlog: ^5.0.1
+    rimraf: ^3.0.2
+    semver: ^7.3.5
+    tar: ^6.1.11
+  bin:
+    node-pre-gyp: bin/node-pre-gyp
+  checksum: b848f6abc531a11961d780db813cc510ca5a5b6bf3184d72134089c6875a91c44d571ba6c1879470020803f7803609e7b2e6e429651c026fe202facd11d444b8
+  languageName: node
+  linkType: hard
+
+"@mapbox/node-pre-gyp@npm:^1.0.10":
   version: 1.0.10
   resolution: "@mapbox/node-pre-gyp@npm:1.0.10"
   dependencies:
@@ -8479,7 +8498,7 @@ __metadata:
     class-transformer: ^0.5.1
     class-validator: ^0.14.0
     date-fns: ^2.29.3
-    duckdb: ^0.7.0
+    duckdb: ^0.10.2
     env-cmd: ^10.1.0
     eslint: ^8.0.1
     eslint-config-prettier: ^8.3.0
@@ -11955,14 +11974,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"duckdb@npm:^0.7.0":
-  version: 0.7.1
-  resolution: "duckdb@npm:0.7.1"
+"duckdb@npm:^0.10.2":
+  version: 0.10.2
+  resolution: "duckdb@npm:0.10.2"
   dependencies:
     "@mapbox/node-pre-gyp": ^1.0.0
-    node-addon-api: "*"
+    node-addon-api: ^7.0.0
     node-gyp: ^9.3.0
-  checksum: e0ae57955be21b02b76144f263e361f1a9668f173a175b61229dc9da7435454f29a03bbc1a7d1b9df903d54073de1632c27857c1212201708a3583d3d63eefd3
+  checksum: 5d55c4a2e79fec84de8d590c275daac69f7d3e556802c13ad2909bb05cc91cf2603cf84c9ad8d7fe102a8f094a37808a9c9d2bbcef15404e2c5f906134bda797
   languageName: node
   linkType: hard
 
@@ -13225,6 +13244,13 @@ __metadata:
     jest-message-util: ^29.5.0
     jest-util: ^29.5.0
   checksum: 58f70b38693df6e5c6892db1bcd050f0e518d6f785175dc53917d4fa6a7359a048e5690e19ddcb96b65c4493881dd89a3dabdab1a84dfa55c10cdbdabf37b2d7
+  languageName: node
+  linkType: hard
+
+"exponential-backoff@npm:^3.1.1":
+  version: 3.1.1
+  resolution: "exponential-backoff@npm:3.1.1"
+  checksum: 3d21519a4f8207c99f7457287291316306255a328770d320b401114ec8481986e4e467e854cb9914dd965e0a1ca810a23ccb559c642c88f4c7f55c55778a9b48
   languageName: node
   linkType: hard
 
@@ -18566,15 +18592,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-addon-api@npm:*":
-  version: 6.1.0
-  resolution: "node-addon-api@npm:6.1.0"
-  dependencies:
-    node-gyp: latest
-  checksum: 3a539510e677cfa3a833aca5397300e36141aca064cdc487554f2017110709a03a95da937e98c2a14ec3c626af7b2d1b6dabe629a481f9883143d0d5bff07bf2
-  languageName: node
-  linkType: hard
-
 "node-addon-api@npm:^2.0.0":
   version: 2.0.2
   resolution: "node-addon-api@npm:2.0.2"
@@ -18590,6 +18607,15 @@ __metadata:
   dependencies:
     node-gyp: latest
   checksum: 2508bd2d2981945406243a7bd31362fc7af8b70b8b4d65f869c61731800058fb818cc2fd36c8eac714ddd0e568cc85becf5e165cebbdf7b5024d5151bbc75ea1
+  languageName: node
+  linkType: hard
+
+"node-addon-api@npm:^7.0.0":
+  version: 7.1.0
+  resolution: "node-addon-api@npm:7.1.0"
+  dependencies:
+    node-gyp: latest
+  checksum: 26640c8d2ed7e2059e2ed65ee79e2a195306b3f1fc27ad11448943ba91d37767bd717a9a0453cc97e83a1109194dced8336a55f8650000458ef625c0b8b5e3df
   languageName: node
   linkType: hard
 
@@ -18648,7 +18674,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-gyp@npm:^9.3.0, node-gyp@npm:latest":
+"node-gyp@npm:^9.3.0":
+  version: 9.4.1
+  resolution: "node-gyp@npm:9.4.1"
+  dependencies:
+    env-paths: ^2.2.0
+    exponential-backoff: ^3.1.1
+    glob: ^7.1.4
+    graceful-fs: ^4.2.6
+    make-fetch-happen: ^10.0.3
+    nopt: ^6.0.0
+    npmlog: ^6.0.0
+    rimraf: ^3.0.2
+    semver: ^7.3.5
+    tar: ^6.1.2
+    which: ^2.0.2
+  bin:
+    node-gyp: bin/node-gyp.js
+  checksum: 8576c439e9e925ab50679f87b7dfa7aa6739e42822e2ad4e26c36341c0ba7163fdf5a946f0a67a476d2f24662bc40d6c97bd9e79ced4321506738e6b760a1577
+  languageName: node
+  linkType: hard
+
+"node-gyp@npm:latest":
   version: 9.3.1
   resolution: "node-gyp@npm:9.3.1"
   dependencies:
