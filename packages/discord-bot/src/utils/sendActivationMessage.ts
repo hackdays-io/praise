@@ -42,10 +42,11 @@ export const sendActivationMessage = async (
       return;
     }
 
-    const hostUrl =
-      process.env.NODE_ENV === 'development'
-        ? process.env.FRONTEND_URL
-        : `https://${host}`;
+    const hostUrl = process.env.FRONTEND_URL;
+    // 本当はhost以下になるが、FRONTEND_URLにする
+    // process.env.NODE_ENV === 'development'
+    //   ? process.env.FRONTEND_URL
+    //   : `https://${host}`;
 
     const activationURL = `${hostUrl || 'undefined:/'}/activate?accountId=${
       member.user.id
